@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
+    
     char input[25] = { 0 };
     char output[25] = { 0 };
     char c;
@@ -15,7 +16,7 @@ int main(void) {
             break;
     }
 
-    for (i = 0, j = sizeof input; j != -1; i++)
+    for (i = 0, j = sizeof (input); j != -1; i++)
         output[i] = input[--j];
 
     for (i = 0; i < 25; ++i)
